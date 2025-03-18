@@ -2,6 +2,7 @@
 html {
   box-sizing: border-box;
 }
+
 *,
 ::after,
 ::before {
@@ -21,11 +22,16 @@ body {
   margin-bottom: 10px;
 }
 
+
 .banner {
+  display: none;
   background-color: #e74c3c;
 }
-.obdelnik {
-  background-color: #2ecc71;
+
+@media (width: 801px) {
+  .banner {
+    display: block;
+  }
 }
 
 /*
